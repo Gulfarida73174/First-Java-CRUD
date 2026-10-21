@@ -16,8 +16,8 @@ public class MainView extends VerticalLayout {
     public MainView(CustomerRepository repository) {
         this.repository = repository;
 
-        TextField firstName = new TextField("First name");
-        TextField lastName = new TextField("Last name");
+        TextField firstName = new TextField("Name name");
+        TextField lastName = new TextField("Sikach name");
         Button addButton = new Button("Add Customer", e -> {
             repository.save(new Customer(firstName.getValue(), lastName.getValue()));
             firstName.clear();
